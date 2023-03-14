@@ -24,7 +24,7 @@
         <header>
             <div class="non">invi-click</div>
             <div class="menubar" id="menubar">
-                <a href="#" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+                <a href="#home" onclick="toggleMenu()" aria-label="Click to show menu"><i class="fa-solid fa-bars"></i></a>
             </div>
             <div class="logo">
                 <a class="head-logo" href="index.html">
@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="menucart" id="menucart">
-                <a href="#" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#home" onclick="toggleCart()" aria-label="Click to show cart"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="socials" id="social">
                 <a href="https://www.facebook.com/" target="_blank"><img src="./images/logos/fb-logo.png" alt="Facebook page"></a>
@@ -48,13 +48,13 @@
                 <a href="about.html">About Us</a>
                 <a href="#bar" id="mobile">Search</a>
                 <a href="register.html" id="mobile">Register | Login</a>
-                <input class="nav-button" type="text" placeholder=" Search.." id="search-bar">
-                <button type="submit" class="nav-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="nav-button" type="text" placeholder=" Search.." id="search-bar" aria-label="searchbox">
+                <button type="submit" class="nav-button" aria-label="Search the entry"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="tool-nav">
                 <a href="register.html" id="reg-text">Register | Login</a>
-                <a href="register.html" class="nav-button" id="reg-icon" style="font-size: 1.25rem;"><i class="fa-solid fa-circle-user"></i></a>
-                <button class="nav-button" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                <a href="register.html" class="nav-button" id="reg-icon" style="font-size: 1.25rem;" aria-label="Click to register"><i class="fa-solid fa-circle-user"></i></a>
+                <button class="nav-button" onclick="toggleCart()" aria-label="Show the cart"><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
         </nav>
     <main>

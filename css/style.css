@@ -16,7 +16,7 @@ a:link {
 }
 
 header {
-    background-color: #0b86cc;
+    background-color: #065989;
     display: flex;
     overflow: hidden;
     font-family: 'Koulen', cursive;
@@ -35,6 +35,11 @@ header .head-logo{
     font-size: 1.25rem;
     font-weight: 400;
     display: inline-block;
+}
+
+.non {
+    color: #ffffff;
+    visibility: hidden;
 }
 
 .logo h1 {
@@ -68,7 +73,7 @@ header .menubar {
 }
 
 header .menubar a, .menucart  a {
-    color: #ececec;
+    color: #ffffff;
 }
 
 header .menucart {
@@ -395,7 +400,7 @@ main {
     border-radius: 3px;
     border-width: 1px;
     margin-bottom: 15px;
-    background-color: #ececec;
+    background-color: #ffffff;
 }
 
 .column-form input[type=date], select {
@@ -405,7 +410,7 @@ main {
     border-radius: 3px;
     border-width: 1px;
     margin-bottom: 15px;
-    background-color: #ececec;
+    background-color: #ffffff;
 }
 
 .column-form input[type=checkbox] {
@@ -414,7 +419,7 @@ main {
 
 .column-form button[type=button] {
     background-color: #0b86cc;
-    color: #ececec;
+    color: #ffffff;
     font-family: 'Jost', sans-serif;
     font-weight: 500;
     padding: 5px 10px;
@@ -464,7 +469,7 @@ span {
 
 #google {
     background-color: white;
-    border-color: #ececec;
+    border-color: #ffffff;
     color: #2c2c2c;
 }
 #google:hover {
@@ -473,7 +478,7 @@ span {
 
 #paypal {
     background-color: #ffc43a;
-    border-color: #ececec;
+    border-color: #ffffff;
     color: white;
 }
 #paypal:hover {
@@ -482,7 +487,7 @@ span {
 
 #apple {
     background-color: #b2b2b2;
-    border-color: #ececec;
+    border-color: #ffffff;
     color: white;
 }
 #apple:hover {
@@ -491,7 +496,7 @@ span {
 
 #facebook {
     background-color: #3b5999;
-    border-color: #ececec;
+    border-color: #ffffff;
     color: white;
 }
 #facebook:hover {
@@ -645,7 +650,7 @@ aside {
     background-color: #171717;
     width: 20vw;
     font-family: 'Jost', sans-serif;
-    color: #ececec;
+    color: #ffffff;
     display: none;
 }
 
@@ -683,7 +688,7 @@ aside h2 {
 }
 
 .cart-divider {
-    background-color: #ececec;
+    background-color: #ffffff;
     height: 2px;
     width: 80%;
     margin: auto;
@@ -697,8 +702,8 @@ aside h2 {
 }
 
 .cart-buttons button {
-    background-color: #0b86cc;
-    color: #ececec;
+    background-color: #065989;
+    color: #ffffff;
     font-family: 'Jost', sans-serif;
     font-weight: 500;
     padding: 5px 10px;
@@ -713,7 +718,7 @@ aside h2 {
 /* Styling the Footer section */
 
 footer {
-    background-color: #0b86cc;
+    background-color: #065989;
     font-family: 'Jost', sans-serif;
     width: 100%;
 }
@@ -728,14 +733,14 @@ footer {
 
 .footer-block h3, .footer-social h3{
     font-weight: 500;
-    color: #171717;
+    color: #ffffff;
 }
 
 .footer-block a, .footer-social a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: #ececec;
+    color: #ffffff;
     padding-top: 5px; 
 }
 
@@ -749,6 +754,7 @@ footer {
     padding-top: 5px;
     padding-bottom: 20px;
     font-size: 0.95rem;
+    color: #ffffff;
 }
 
 .footer-icons {
@@ -851,7 +857,7 @@ footer {
         padding-top: 20px;
     }
     .footer-icons a {
-        color: #ececec;
+        color: #ffffff;
         font-size: 2rem;
         padding: 0px 10px;
     }
