@@ -3,21 +3,39 @@
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Computer Force</title>
-        <link rel="stylesheet" href="./css/err.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Support for mobile browsers -->
+        <!-- Android browsers: Chrome, Firefox, Opera -->
+        <meta name="theme-color" content="#0b86cc">
+        <!-- iOS browsers: Safari, Webkit -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#0b86cc">
+
+        <!-- Load extension for Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Koulen&display=swap" rel="stylesheet">
+        <!-- Load extension for icons library from Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <!-- Load jQuery for toggle animations -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <header>
-            <div class="non">Click</div>
+            <div class="non">invi-click</div>
+            <div class="menubar" id="menubar">
+                <a href="#" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+            </div>
             <div class="logo">
-                <a class="head-logo" href="#home">
-                    <h1><img src="./images/logos/computer-force.png" alt="Computer Force Logo" width="60px">Computer Force</h1>
+                <a class="head-logo" href="index.html">
+                    <h1 id="desktop"><img src="./images/logos/computer-force.png" alt="Computer Force Logo" width="60px">Computer Force</h1>
+                    <h1 id="mobile"><img src="./images/logos/computer-force.png" alt="Computer Force Logo" width="70px"></h1>
                 </a>
             </div>
-            <div class="socials">
+            <div class="menucart" id="menucart">
+                <a href="#" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="socials" id="social">
                 <a href="https://www.facebook.com/" target="_blank"><img src="./images/logos/fb-logo.png" alt="Facebook page"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="./images/logos/ig-logo.png" alt="Instagram page"></a>
                 <a href="https://www.twitter.com" target="_blank"><img src="./images/logos/tw-logo.png" alt="Twitter page"></a>
@@ -25,21 +43,22 @@
         </header>
         <nav>
             <div class="page-nav">
-                <a href="#Home">Home</a>
+                <a href="index.html">Home</a>
                 <a href="products.html">Products</a>
-                <a href="404.html">Promotions</a>
-                <a href="404.html">Sale</a>
                 <a href="about.html">About Us</a>
-                <input class="search-bar" type="text" placeholder="Search..">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="#bar" id="mobile">Search</a>
+                <a href="register.html" id="mobile">Register | Login</a>
+                <input class="nav-button" type="text" placeholder=" Search.." id="search-bar">
+                <button type="submit" class="nav-button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="tool-nav">
-                <a href="register.html">Register | Login</a>
-                <button type="button" class="openbtn" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i></button>
+                <a href="register.html" id="reg-text">Register | Login</a>
+                <a href="register.html" class="nav-button" id="reg-icon" style="font-size: 1.25rem;"><i class="fa-solid fa-circle-user"></i></a>
+                <button class="nav-button" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
         </nav>
         <main>
-            <div class="content-page">
+            <div class="content-misc">
                 <div class="err-msg">
                     <h1>404 - PAGE NOT FOUND</h1>
                     <p>Sorry, looks like you're lost. Click <a href="./index.html">here</a> to go back to the homepage.</p>
@@ -85,32 +104,76 @@
             <div class="footer-block">
                 <h3>Information</h3>
                 <a href="about.html">Store Hours</a>
-                <a href="#shipping">Shipping</a>
-                <a href="#war-ret">Warranty & Returns</a>
+                <a href="err.html">Shipping</a>
+                <a href="err.html">Warranty & Returns</a>
             </div>
                 <div class="footer-block">
                 <h3>Company</h3>
                 <a href="about.html">About Us</a>
                 <a href="terms.html">Terms & Conditions</a>
-                <a href="policy.html">Privacy Policy</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
             <div class="footer-block">
                 <h3>Contact Us</h3>
                 <a href="https://goo.gl/maps/aA6pg21QJ4D2q8dD8" target="_blank">Locations</a>
                 <a href="tel:0244445555">Phone Lines</a>
-                <a href="404.html">Feedback & Complaint</a>
+                <a href="err.html">Feedback & Complaint</a>
             </div>
-            <div class="footer-block">
+            <div class="footer-social">
                 <h3>Follow Us</h3>
                 <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 <a href="https://www.twitter.com/" target="_blank">Twitter</a>
             </div>
-            <br><br>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
         </div>
         <div class="footer-copyright">
             <p>2023 Copyright© Computer Force. All Rights Reserved.</p>
         </div>
         </footer>
+        <script>
+            //Start script for Cart button on Desktop
+            function toggleCart() {
+                var x = document.getElementsByTagName("aside")[0];
+                var y = document.getElementsByClassName("content-main")[0];
+                var z = window.matchMedia("(min-width: 1366px)");
+                    if (x.style.display === "none") {
+                        x.style.display = "block"; y.style.margin = "auto"
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            //End script for Cart button on Desktop
+
+            //Start script for Cart button on Mobile
+            function toggleCart() {
+                var x = document.getElementsByTagName("aside")[0];
+                var y = document.getElementsByClassName("content-main")[0];
+                var z = window.matchMedia("(max-width: 850px)");
+                    if ((x.style.display === "none") && (z.matches)) {
+                        x.style.display = "block"; x.style.width = "80vw"; x.style.margin = "auto"; y.style.display = "none";
+                    } else {
+                        x.style.display = "none"; y.style.display = "block";
+                    }
+                }
+            //End script for Cart button on Mobile
+
+            //Start script for Mobile Menu
+            function toggleMenu() {
+                var x = document.getElementsByTagName("nav")[0];
+                var y = window.matchMedia("(max-width: 850px)");
+                    if ((x.style.display === "block") && (y.matches)) {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            //End script for Mobile Menu
+
+            </script>
     </body>
 </html>
