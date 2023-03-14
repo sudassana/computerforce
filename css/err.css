@@ -1,0 +1,271 @@
+body,html {
+    margin:0;
+    padding:0;
+  }
+
+body {
+    background-color: #2c2c2c;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header {
+    background-color: #0b86cc;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Koulen', cursive;
+    align-items: center;
+    height: 80px;
+}
+
+header > div:first-child{
+    margin-right: auto;
+    visibility: hidden;
+}
+
+header .head-logo{
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.head-logo img {
+    padding-right: 5px;
+}
+
+.socials img{
+    width: 32px;
+    height: 32px;
+    padding-right: 15px;
+}
+
+header .socials {
+    display: flex;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+nav {
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom-style: solid;
+    border-color: #2c2c2c;
+    border-bottom-width: 2px;
+}
+
+nav > div:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    margin-left: 60px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #0b86cc;
+}
+/* Search Bar Button */
+.search-bar {
+    width: 200px;
+    height: 25px;
+    margin-left: 60px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.page-nav button {
+    border: none;
+    font-size: 18px;
+    background-color: #ececec;
+}
+.page-nav button:hover {
+    color: #0b86cc;
+    cursor: pointer;
+}
+
+.page-nav input {
+    border-color: #2c2c2c;
+    font-family: 'Jost', sans-serif;
+}
+
+.tool-nav {
+    margin-right: 30px;
+}
+
+.tool-nav a {
+    margin-right: 30px;
+}
+
+.tool-nav button{
+    border: none;
+    font-size: 18px;
+    background-color: #ececec;
+}
+.tool-nav button:hover {
+    color: #0b86cc;
+    cursor: pointer;
+}
+
+/* Default Web View with Cart */
+/* main {
+    display: flex;
+} */
+
+/* Without the Cart on the side */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-page {
+    width: 80vw;
+    background-color: white;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+.content-page h1, p {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding-top: 10px;
+    color: #2c2c2c;
+}
+
+.content-page h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.content-page p {
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+}
+
+.err-msg a{
+    text-decoration: underline;
+}
+
+.page-blank {
+    height: 1200px;
+}
+
+aside {
+    background-color: #2c2c2c;
+    width: 20vw;
+    font-family: 'Jost', sans-serif;
+    color: #ececec;
+    clear: both;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.cart-list dt {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.cart-list dd {
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cart-total dt {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.cart-total dd {
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cart-divider {
+    background-color: #ececec;
+    height: 2px;
+    width: 80%;
+    margin: auto;
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cart-buttons button {
+    background-color: #0b86cc;
+    color: #ececec;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart-buttons button:hover {
+    background-color: #39a4e2;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0b86cc;
+    font-family: 'Jost', sans-serif;
+}
+
+.footer-container {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-block h3{
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.footer-block a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #ececec;
+    padding-top: 8px; 
+}
+
+.footer-block a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

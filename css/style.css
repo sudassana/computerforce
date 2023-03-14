@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body,html {
+    margin:0;
+    padding:0;
+  }
+
+body {
+    background-color: #2c2c2c;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header {
+    background-color: #0b86cc;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Koulen', cursive;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+}
+
+header > div:first-child{
+    margin-right: auto;
+    visibility: hidden;
+}
+
+header .head-logo{
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.head-logo img {
+    padding-right: 5px;
+}
+
+.head-logo #mobile {
+    display: none;
+}
+
+.socials img{
+    width: 32px;
+    height: 32px;
+    padding-right: 15px;
+}
+
+header .socials {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+header .menubar {
+    padding: 0px 15px;
+    margin-right: auto;
+    font-size: 40px;
+    display: none;
+}
+
+header .menubar a, .menucart  a {
+    color: #ececec;
+}
+
+header .menucart {
+    padding: 0px 15px;
+    margin-left: auto;
+    font-size: 40px;
+    display: none;
+}
+/* Navigation Bar */
+nav {
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom-style: solid;
+    border-color: #2c2c2c;
+    border-bottom-width: 2px;
+    top: 0;
+    position: sticky;
+    width: 100%;
+}
+
+nav > div:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    padding-left: 30px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-size: 1.125rem;
+}
+
+nav a:hover {
+    color: #0b86cc;
+}
+/* Search Bar Button */
+.search-bar {
+    width: 200px;
+    height: 25px;
+    margin-left: 30px;
+    border-radius: 6px;
+    display: none;
+}
+
+.page-nav button {
+    border: none;
+    font-size: 1.125rem;
+    background-color: #ececec;
+    padding-left: 15px;
+}
+.page-nav button:hover {
+    color: #0b86cc;
+    cursor: pointer;
+}
+
+.page-nav input {
+    border-color: #2c2c2c;
+    font-family: 'Jost', sans-serif;
+}
+
+.tool-nav {
+    margin-right: 30px;
+}
+
+.tool-nav a {
+    margin-right: 30px;
+}
+
+.tool-nav button{
+    border: none;
+    font-size: 1.125rem;
+    background-color: #ececec;
+}
+.tool-nav button:hover {
+    color: #0b86cc;
+    cursor: pointer;
+}
+
+#reg-text {
+    display: none;
+}
+
+/* Default Web View with Cart */
+main {
+    display: flex;
+}
+
+.content-main {
+    width: 80vw;
+    background-color: white;
+    margin-top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.content-main h1, p {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #2c2c2c;
+}
+
+.content-main h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.content-main p {
+    font-size: 1.15rem;
+}
+
+/* Image Slideshow */
+.slideshow-container {
+    max-width: 1050px;
+    position: static;
+    margin: auto;
+    padding: 0px 10px;
+  }
+
+.slideshow-container img {
+    border-style: solid;
+    border-color: #0b86cc;
+    border-radius: 10px;
+}
+  
+  /* The indicators of Image Slides*/
+  .indicator {
+    cursor: pointer;
+    height: 8px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #2c2c2c;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #0b86cc;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* CSS for Featured Products */
+.featured-prod {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: white;
+    padding: 0px 25px;
+    align-items: center;
+}
+
+.featured-prod > div {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+.item-container img {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #0b86cc;
+    width: 100%;
+}
+.item-container img:hover {
+    border-color: #68c4fa;
+}
+
+.item-container h2 {
+    font-size: 1.45rem;
+    color: #2c2c2c;
+    font-weight: 500;
+}
+
+/* Styling the Reviews section */
+
+.rev-container {
+    display: grid;
+    grid: auto / auto ;
+    gap: 10px;
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 25px;
+}
+
+.rev-container img {
+    width: 70%;
+    max-width: 600px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #0b86cc;
+}
+
+.rev-container img:hover {
+    border-color: #68c4fa;
+    cursor: pointer;
+}
+
+/* Styling the Aside/Cart  */
+
+aside {
+    background-color: #2c2c2c;
+    width: 20vw;
+    font-family: 'Jost', sans-serif;
+    color: #ececec;
+    display: none;
+    transition: display 2s;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.cart-list dt {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.cart-list dd {
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cart-total dt {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cart-total dd {
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cart-divider {
+    background-color: #ececec;
+    height: 2px;
+    width: 80%;
+    margin: auto;
+}
+
+.cart-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+.cart-buttons button {
+    background-color: #0b86cc;
+    color: #ececec;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart-buttons button:hover {
+    background-color: #39a4e2;
+    cursor: pointer;
+}
+
+/* Styling the Footer section */
+
+footer {
+    background-color: #0b86cc;
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-block h3, .footer-social h3{
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.footer-block a, .footer-social a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #ececec;
+    padding-top: 5px; 
+}
+
+.footer-block a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.footer-icons {
+    display: none;
+}
+
+/* Setting up CSS for Mobile view */
+
+@media screen and (max-width: 860px) and (orientation: portrait) {
+    .content-main {
+        width: 100vw;
+        margin: auto;
+    }
+    header .non, .socials {
+        display: none;
+    }
+    .head-logo #mobile {
+        display: inline;
+    }
+    .head-logo #desktop {
+        display: none;
+    }
+    header .menubar, header .menucart {
+        display: inline;
+    }
+    nav {
+        display: none;
+    }
+    header {
+        position: sticky;
+        top: 0;
+    }
+    .featured-prod {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 40px;
+    }
+    .rev-container .reviews {
+        padding-bottom: 20px;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 5px 25px;
+    }
+    .footer-social {
+        display: none;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .footer-icons a {
+        color: #ececec;
+        font-size: 2rem;
+        padding: 0px 10px;
+    }
+    .footer-copyright {
+        padding: 0px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Setting up CSS for Tablet view */
+
+@media screen and (min-width: 1024px){
+    .search-bar {
+        display: inline;
+    }
+    #reg-text {
+        display: inline;
+    }
+    #reg-icon {
+        display: none;
+    }
+    .featured-prod {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Setting up CSS for Max Tablet view */
+@media screen and (min-width: 1200px) {
+    .featured-prod {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .rev-container {
+        display: grid;
+        grid: auto / auto auto auto;
+    }
+}
+
+/* Setting up CSS for Laptop view */
+
+@media screen and (min-width: 1366px){
+    aside {
+        display: block;
+    }
+    .content-main {
+        width: 80vw;
+        margin: 0;
+    }
+
+}
