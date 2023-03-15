@@ -479,14 +479,14 @@ span {
 #paypal {
     background-color: #ffc43a;
     border-color: #ffffff;
-    color: white;
+    color: #363636;
 }
 #paypal:hover {
     border-color: #2c2c2c;
 }
 
 #apple {
-    background-color: #b2b2b2;
+    background-color: #6b6b6b;
     border-color: #ffffff;
     color: white;
 }
