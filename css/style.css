@@ -440,7 +440,7 @@ main {
 }
 
 span {
-    color: red;
+    color: #A80000;
 }
 
 .social-connect h1 {
@@ -599,7 +599,7 @@ iframe {
 
 .table-terms a{
     font-size: 1.25rem;
-    color: #0b86cc;
+    color: #0872AF;
 }
 
 .table-terms a:hover {
